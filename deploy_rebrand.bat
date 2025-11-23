@@ -18,7 +18,7 @@ git add static/dashboard.js
 
 echo.
 echo Committing changes...
-git commit -m "Rebrand to Fluent Oman: copyright by Aisha Al Rushaidi, remove Practice Speaking, enlarge E-books button, remove all loading text"
+git commit -m "Rebrand to Fluent Oman: copyright by Aisha AlRusheidi, remove Practice Speaking, enlarge E-books button, remove all loading text"
 
 echo.
 echo Pushing to GitHub (will trigger Render deployment)...
@@ -34,7 +34,7 @@ echo Render will automatically rebuild in 2-3 minutes.
 echo.
 echo Changes included:
 echo - Site name: "Fluent Edge" → "Fluent Oman™"
-echo - Added copyright: "Programmed & Designed by Aisha Al Rushaidi"
+echo - Added copyright: "Programmed & Designed by Aisha AlRusheidi"
 echo - Removed "Practice Speaking" button
 echo - Enlarged E-books button (green, prominent)
 echo - Removed all "Loading..." text from pages
