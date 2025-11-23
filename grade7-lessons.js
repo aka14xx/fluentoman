@@ -43,10 +43,11 @@
 
       let totalStarsEarned = 0;
 
-      // Build unit navigation
+      // Build unit navigation (show actual unit titles)
       data.units.forEach(unit => {
         const li = document.createElement('li');
-        li.innerHTML = `<a href="#unit${unit.unit}" onclick="scrollToUnit(${unit.unit}); return false;"><span class="unit-icon">📚</span> Unit ${unit.unit}</a>`;
+        const label = unit.title || `Unit ${unit.unit}`;
+        li.innerHTML = `<a href="#unit${unit.unit}" onclick="scrollToUnit(${unit.unit}); return false;"><span class="unit-icon">📚</span> ${label}</a>`;
         unitNav.appendChild(li);
       });
 

@@ -59,10 +59,10 @@
 
       let totalStarsEarned = 0;
 
-      // Build unit navigation
+      // Build unit navigation (show actual unit titles)
       data.units.forEach((unit, index) => {
         const unitNumber = index + 1;
-        const unitLabel = unit.title === "WOW! Learning Club" ? unit.title : `Unit ${unitNumber}`;
+        const unitLabel = unit.title || `Unit ${unitNumber}`;
         const li = document.createElement('li');
         li.innerHTML = `<a href="#unit${unitNumber}" onclick="scrollToUnit(${unitNumber}); return false;"><span class="unit-icon">📚</span> ${unitLabel}</a>`;
         unitNav.appendChild(li);
